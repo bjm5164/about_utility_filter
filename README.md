@@ -11,7 +11,7 @@ content.**
 <ins>**Utility to Pitchbook**<ins>
 * Identify useful information about target companies.
 * Filter useless information out of downstream classification pipelines.
-* Provide access to predictions through a fully containerized EC2 deployment.
+* Provide access to predictions through fast API, which can be containerized and deployed on EC2.
 
 
 ## The solution
