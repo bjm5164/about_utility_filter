@@ -27,8 +27,6 @@ content.**
 
 * **4. Baseline model generation**: In order to quickly generate a baseline model, I used a bag of words approach to build an unweighted word matrix as input to a logistic regression model. The baseline model, while misclassifying about half of the useful sentences, was at least able to filter a large fraction of the useless sentences, a potentially useful feature. More importantly, this provided a baseline to generate better models. `alternative_models.ipynb` contains further analysis and comments.
 
-<img src="images/confusion_matrix.png" width="800px" >
-<img src="images/roc_curve.png" width="800px" >
 
 ### Part 1b:
 
@@ -37,7 +35,8 @@ content.**
 * **1. TFIDF:**: Rather than simple bag of words inputs, I instead sought to generate a tfidf matrix. This should provide better weighting for potentially useful words. 
 * **2. Model building and evaluation**: I chose logistic regression, random forest classification, and a KNN as three models to test. These models are generally fast and lightweight making them amenable to deployment in real time. Of the three models, the untuned KNN perfprmed least well by sensible metrics (precision, recall, AUC). The logistic regression and random forest classifier performed similarly by AUC, but threshold tuning would be necessary for the RFC. Given time constraints and the simpler nature of logistic regression hyperparameter tuning, I chose to move forward with a TFIDF Logistic regression classifier. 
 * **3. Hyperparameter tuning and validation**: The tuned model showed a 17% increase in recall over the baseline model with minimal loss in precision.
-
+<img src="images/confusion_matrix.png" width="800px" >
+<img src="images/roc_curve.png" width="800px" >
 
 ### Part 2:
 
