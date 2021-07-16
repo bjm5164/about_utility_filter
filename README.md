@@ -48,3 +48,10 @@ content.**
 <img src="images/docs.png" width="800px" >
 <img src="images/inference.png" width="800px" >
 
+## Repository Structure: 
+
+* **1. src**: Contains the scripts necessary for preprocessing, training, testing, and inference. main.py is the primary method of interaction.
+* **2. exploration**: Contains jupyter notebooks containing exploratory data analysis, model generation, and testing.
+* **3. data**: Contaisn the data used for model generation and testing.
+* **4. DockerFile**: The DockerFile used for generating a dockerimage for deployment.
+
