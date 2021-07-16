@@ -1,6 +1,6 @@
 # Scraping company descriptions
 
-<img src="images/wordmap.png" width="300px" >
+<img src="images/wordmap.png" width="1000px" >
 
 ## Objective: 
 
@@ -27,8 +27,8 @@ content.**
 
 * **4. Baseline model generation**: In order to quickly generate a baseline model, I used a bag of words approach to build an unweighted word matrix as input to a logistic regression model. The baseline model, while misclassifying about half of the useful sentences, was at least able to filter a large fraction of the useless sentences, a potentially useful feature. More importantly, this provided a baseline to generate better models. `alternative_models.ipynb` contains further analysis and comments.
 
-<img src="images/confusion_matrix.png" width="500px" >
-<img src="images/roc_curve.png" width="500px" >
+<img src="images/confusion_matrix.png" width="800px" >
+<img src="images/roc_curve.png" width="800px" >
 
 ### Part 1b:
 
@@ -46,6 +46,6 @@ content.**
 * **1. Use case considerations**: Model interaction will dictate how the model is deployed. The assumption for this model is that it does not need a clean UI for customer interaction. This model will exist as part of a top level web scrapig infrastructure in order to filter useful data for down stream classifications. As such, methods for passing formatted data, and returning predictions should be sufficient. 
 * **2. Stragegy**: I chose to use FastAPI to set up a lightweight method for model training, testing, and inference. This allows for straightforward interaction, automatic documentation, has been dockerized and is ready to deploy to an EC2 instance. 
 
-<img src="images/docs.png" width="500px" >
-<img src="images/inference.png" width="500px" >
+<img src="images/docs.png" width="800px" >
+<img src="images/inference.png" width="800px" >
 
