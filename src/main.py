@@ -123,7 +123,7 @@ def train():
     X_bal, y_bal = smote.fit_resample(features_train, y_train)
     
     #Train model
-    clf_LR = LogisticRegression(max_iter=1000, solver='saga', penalty='l2', C=25)
+    clf_LR = LogisticRegression(max_iter=1000, solver='saga', penalty='l2', C=1)
     clf_LR.fit(X_bal,y_bal.ravel())
     
     #Save model and vectorizer
