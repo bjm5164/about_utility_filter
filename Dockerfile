@@ -1,4 +1,4 @@
-FROM python:3.6-stretch
+FROM python:3
 # install build utilities
 RUN apt-get update && \
 	apt-get install -y gcc make apt-transport-https ca-certificates build-essential
@@ -20,3 +20,6 @@ RUN ls -la /src/*
 
 # Running Python Application
 CMD ["python3", "/src/main.py"]
+
+
+
